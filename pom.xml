@@ -11,7 +11,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tr.edu.ogu.ceng</groupId>
-	<artifactId>Bill</artifactId>
+	<artifactId>bill</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Bill</name>
 	<description>Demo project for Spring Boot</description>
@@ -55,6 +55,13 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+
 			<scope>test</scope>
 		</dependency>
 
