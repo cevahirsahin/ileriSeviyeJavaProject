@@ -1,4 +1,9 @@
-package tr.edu.ogu.ceng.Bill.Repository;
+package tr.edu.ogu.ceng.Bill.repository;
 
-public class SettingRepository {
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import tr.edu.ogu.ceng.Bill.entity.Setting;
+
+public interface SettingRepository extends JpaRepository<Setting,Long> {
+
 }

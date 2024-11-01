@@ -1,4 +1,7 @@
-package tr.edu.ogu.ceng.Bill.Repository;
+package tr.edu.ogu.ceng.Bill.repository;
 
-public interface PaymentRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import tr.edu.ogu.ceng.Bill.entity.Payment;
+
+public interface PaymentRepository extends JpaRepository<Payment, Long> {
 }

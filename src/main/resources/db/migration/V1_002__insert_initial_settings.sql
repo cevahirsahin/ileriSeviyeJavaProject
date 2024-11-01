@@ -1,0 +1,1 @@
+INSERT INTO Setting (key, value) VALUES ('Grup11', 'Bill');

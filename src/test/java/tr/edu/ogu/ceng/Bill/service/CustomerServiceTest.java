@@ -1,4 +1,4 @@
-package tr.edu.ogu.ceng.Bill;
+package tr.edu.ogu.ceng.Bill.service;
 
-public class CustomerTest {
+public class CustomerServiceTest {
 }

@@ -1,4 +1,6 @@
-package tr.edu.ogu.ceng.Bill.Repository;
+package tr.edu.ogu.ceng.Bill.repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import tr.edu.ogu.ceng.Bill.entity.Category;
 
-public interface CategoryRepository {
+public interface CategoryRepository extends JpaRepository<Category, Long> {
 }

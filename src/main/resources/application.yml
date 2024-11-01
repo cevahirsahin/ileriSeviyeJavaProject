@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Bill
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ilerijava
+    username: devuser
+    password: devpassword
+    driver-class-name: org.postgresql.Driver
+  flyway:
+      locations: classpath:/db/migration
+
+
+server:
+  port: 8008
+
+
+services:
+    user: http://localhost:8007      # Kullanıcı (7)
+    order: http://localhost:8003     # Sipariş (3)
+    gateway: http://localhost:8001   # Gateway (1)
+    payment: http://localhost:8006   # Ödeme (6)
+    product: http://localhost:8002   # Ürün (2)
+    Bill: http://localhost:8008      # Fatura (8)
+    notification: http://localhost:8004 # Bildirim (4)
+    cart: http://localhost:8005      # Alışveriş Sepeti (5)
+    shipping: http://localhost:8011  # Kargo(11)

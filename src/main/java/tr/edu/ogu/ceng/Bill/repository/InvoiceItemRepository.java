@@ -1,4 +1,7 @@
-package tr.edu.ogu.ceng.Bill.Repository;
+package tr.edu.ogu.ceng.Bill.repository;
 
-public interface InvoiceItemRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import tr.edu.ogu.ceng.Bill.entity.InvoiceItem;
+
+public interface InvoiceItemRepository extends JpaRepository<InvoiceItem, Long> {
 }
